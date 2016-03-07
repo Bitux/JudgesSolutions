@@ -15,15 +15,13 @@ public class Kaprekar{
         int veces = sc.nextInt();               // Numero de casos a evaluar
         String[] numArray = new String[veces];
         for(int i=0; i<veces; i++){             // Llena un array con los casos 
-            numArray[i]= sc.next();             // respectivos
+        	numArray[i]= sc.next();             // respectivos
         }
 
         for(int j=0; j<numArray.length; j++){ // Ejecutamos la funcion     
             contador=0;
             kaprekarNum(numArray[j]);         // para cada caso 
         }
-
-
     }
 
     public static int kaprekarNum(String numM){
